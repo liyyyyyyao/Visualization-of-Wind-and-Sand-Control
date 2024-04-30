@@ -4,11 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale-1.0" />
         <title>数据可视化</title>
-        <link rel="stylesheet" href="../css/index.css"/>
-        <script src="../js/echarts.min.js"></script>
-        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=d19wKrQSosNyudn49XKMVmqfwplbOSjW"></script> 
-        <script src="../js/bmap.js"></script>
-        <script src="../js/jquery.js"></script>
+        <link rel="stylesheet" href="css/index.css"/>
+        <script src="echarts.min.js"></script>
+        <script src="jquery.js"></script>
         <style>
             .video-background {
             position: fixed;
@@ -23,7 +21,7 @@
     </head>
     <body>
         <video autoplay loop muted class="video-background">
-            <source src="../image/background2.mp4" type="video/mp4">
+            <source src="image/background2.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         <header>
@@ -74,13 +72,13 @@
                     var areaName = params.name;
                     switch (areaName) {
                         case '张家口市':
-                            window.location.href = '../js/Zhangjiakou.html';
+                            window.location.href = 'Zhangjiakou.html';
                             break;
                         case '北京市':
-                            window.location.href = '../js/Beijing.html';
+                            window.location.href = 'Beijing.html';
                             break;
                         case '赤峰市':
-                            window.location.href = '../js/Chifeng.html';
+                            window.location.href = 'Chifeng.html';
                             break;
                         default:
                         // 默认情况下的处理
@@ -349,7 +347,7 @@
                 
                 <div class="panel map">
                     <h2>
-                        <a href="../js/harm.html">
+                        <a href="harm.html">
                             <button style="font-size: 1.25rem; padding: 10px 20px; border: none; border-radius: 5px; background-color: transparent;color:white">危害评估--风沙危害性评估</button>
                         </a>
                     </h2>
@@ -362,9 +360,9 @@
             </div>
         </section>
         
-        <script src="../js/index.js"></script>
-        <script src="../js/echarts.min.js"></script>
-        <script src="../js/ditu.json"></script>
+        <script src="index.js"></script>
+        <script src="echarts.min.js"></script>
+        <script src="ditu.json"></script>
 
         <script>
         // 添加点击事件监听
