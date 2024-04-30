@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale-1.0" />
+        <link rel="stylesheet" href="../css/beijing-style.css"/>
+        <script src="../js/echarts.min.js"></script>
+        <script src="../js/echarts-wordcloud.min.js"></script>
+        <script src="../js/jquery.js"></script>
+        <title>北京市风沙治理</title>
+    </head>
+    <body>
+        <video class="video-background" autoplay muted loop>
+            <source src="../image/grass1.mp4" type="video/mp4" />
+          </video>
+
+        <header>
+            <button class="my-button button1">
+                治理概述
+            </button>
+            <button class="my-button button2">
+                治理成效
+            </button>
+            <button class="my-button button3">
+                各省市详情
+            </button>
+            <div class="pre"></div>
+            <div class="next"></div>
+            <div class="container">
+                <h1>北京</h1>
+            </div>
+        </header>
+
+        <section class="mainbox">
+            <div class="column">
+                <div class="panel line">
+                    <h2>九次普查森林覆盖率</h2>
+                    <div class="chart"></div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel bar">
+                    <h2>不同土地类型面积</h2>
+                    <div class="chart"></div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="panel map" style="height: 410px;width: 700px;">
+                <h2>北京政区图</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+                
+            
+            <div class="panel" style="height: 410px;width: 700px;">
+                <h2>治理情况</h2>
+                <div class="chart1">
+                    北京历史上曾长期受风沙侵害。延庆康庄、昌平南口，以及潮白河、永定河、大沙河流域这五大风沙危害区沙尘肆虐，同时还面临着来自西部、北部等风廊带来的外省输入性风沙威胁。
+                    面对着脆弱的生态家底，从20世纪80年代开始，北京陆续实施了“三北”防护林工程、农田林网、重点风沙危害区绿化造林等工程，大规模防沙治沙成效明显。2000年6月，一场遏制风沙危害的国家级生态工程——京津风沙源治理工程正式启动实施，门头沟、房山、昌平、平谷、怀柔、密云、延庆等7个工程区开始了一场人与沙的艰苦搏斗。
+                    20余年来，7个工程区实现了从沙化土地分布区到重要生态屏障区的转变，构建起了北京抵御风沙的绿色防线。
+                    随着京津风沙源治理和两轮百万亩造林绿化等重大生态工程的实施，截至2022年底，昔日的五大风沙危害区全部得到治理，森林碳汇量、林木蓄积量以及生态服务价值持续增加，京郊北部和西部，千万亩林海蔓延成厚实的生态屏障。
+                    京津风沙源治理工程将人工造林与封山育林有机结合，让野生动植物栖息地逐年恢复，生长繁殖场所逐年扩大，工程建设区域内的生物多样性更加丰富。近年来，被誉为“鸟中大熊猫”的青头潜鸭出现在北京延庆的野鸭湖湿地，大量的苍鹭在野鸭湖湿地繁殖。京西门头沟的珍贵植物槭叶铁线莲，一簇簇白色花朵迎风绽放，在灰黄色的崖壁映衬下，格外动人；密云区先后发现北京无喙兰、北方鸟巢兰、铁木种群等珍稀、濒危植物和尖帽草等；珍稀植物水毛艮、百花山葡萄等也在工程区内相继被发现……生态焕发新活力，北京已成为生物多样性最丰富的大都市之一。
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+            <div class="column">
+                <div class="panel radar">
+                    <h2>词云图</h2>
+                    <div class="chart">
+                    <!-- <img src="../image/Beijing.png"> -->
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel map">
+                    <h2>治理现状</h2>
+                    <div class="chart">
+                        <table>
+                            <tr>
+                                <td>造林总面积</td>
+                                <td>922万亩</td>
+                            </tr>
+                            <tr>
+                                <td>山区森林覆盖率</td>
+                                <td>67%</td>
+                            </tr>
+                            <tr>
+                                <td>沙化土地减少面积</td>
+                                <td>60%</td>
+                            </tr>
+                            <tr>
+                                <td>全年新增造林绿化</td>
+                                <td>1.5万亩</td>
+                            </tr>
+                            <tr>
+                                <td>山区森林健康经营</td>
+                                <td>70万亩</td>
+                            </tr>
+                            <tr>
+                                <td>乔木累计吸收二氧化碳</td>
+                                <td>5501.47万吨</td>
+                            </tr>
+                            <tr>
+                                <td>乔木累计释放氧气</td>
+                                <td>4001万吨</td>
+                            </tr>
+                            <tr>
+                                <td>PM2.5最长连续优良天数</td>
+                                <td>192天</td>
+                            </tr>
+                            <tr>
+                                <td>PM2.5平均浓度</td>
+                                <td>38微克/m³</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+                
+            </div>
+        </section>
+
+        <script src="../js/Beijing.js"></script>
+        <script src="../js/echarts.min.js"></script>
+    </body>
+</html>

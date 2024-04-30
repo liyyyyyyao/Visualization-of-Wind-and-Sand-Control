@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>对话页面</title>
+<style>
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* 确保视频在所有其他内容的后面 */
+      object-fit: cover; /* 视频尺寸自适应屏幕大小 */
+    }
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .dialog {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        max-width: 100%; /* 控制对话框最大宽度 */
+    }
+    .left-dialog {
+        background-color: rgb(231, 197, 203); /* 左侧对话框背景色 */
+        border: 1px solid #ccc; /* 左侧对话框边框样式 */
+        text-align: left; /* 左侧对话框文字左对齐 */
+    }
+    .right-dialog {
+        background-color: #e0f5fd; /* 右侧对话框背景色 */
+        border: 1px solid #86c7d9; /* 右侧对话框边框样式 */
+        text-align: right; /* 右侧对话框文字右对齐 */
+        flex-direction: row-reverse; /* 水平翻转对话框中的内容顺序 */
+    }
+    .avatar {
+        width: 40px; /* 头像宽度 */
+        height: 40px; /* 头像高度 */
+        border-radius: 50%; /* 头像圆角 */
+        margin-left: 10px; /* 修改为左边距 */
+        margin-right: 0; /* 移除右边距 */
+    }
+    .dialog-content {
+        flex: 1; /* 对话内容占据剩余空间 */
+    }
+    .dialog-content p {
+        margin: 0; /* 移除段落的默认边距 */
+    }
+    .dialog-content img {
+        max-width: 100%; /* 图片宽度最大为对话框内容的宽度 */
+        border-radius: 10px; /* 图片圆角 */
+    }
+    .dialog.visible {
+        opacity: 1;
+    }
+    #nextButton {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <video autoplay loop muted class="video-background">
+        <source src="../image/background3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+<div class="container" id="container"></div>
+<div style="text-align: center;">
+    <button id="nextButton" onclick="nextDialog()">下一句</button>
+</div>
+
+<script>
+var dialogues = [
+    {text: "AQI是什么呀？", avatar: "../image/1.jpg"},
+    {text: "AQI是空气质量指数的简称，是新环境空气质量标准用于描述空气质量状况的指标。按照AQI的数值大小将空气质量状况分成了优、良、轻度污染、中度污染、重污染、严重污染六个等级。", avatar: "../image/2.jpg"},
+    {text: "具体哪六个等级，怎么划分的呢？", avatar: "../image/1.jpg"},
+    {image: "../image/level.jpg", avatar: "../image/2.jpg"}, // 使用 image 字段代替 text 字段
+    {text: "我明白了，AQI数值越大，说明空气污染状况越严重。那空气质量指数是怎么来的呢？", avatar: "../image/1.jpg"},
+    {text: "AQI（环境空气质量指数）是2012年3月国家发布的新空气质量评价标准，污染物监测指标以将这6项污染物用统一的评价标准呈现。从各项污染物的IAQI（*空气质量分指数）中选择最大值确定为AQI，当AQI大于50时将IAQI最大的污染物确定为首要污染物。", avatar: "../image/2.jpg"},
+    {text: "我们必须好好保护环境！", avatar: "../image/1.jpg"},
+    {image: "../image/factor.jpg",avatar: "../image/2.jpg"},
+    {text: "那在日常生活中怎样能有效的降低AQI呢？", avatar: "../image/1.jpg"},
+    {text: "低碳环保，从身边做起！多带自用饭盒，少用一次性餐具；购物多用布袋，少用塑料袋；不穿的衣物可进行捐赠；出行尽量乘坐公共交通，节能又减排；及时关闭不用的电器；衣物多自然晾晒，少烘干；及时关闭水龙头......", avatar: "../image/2.jpg"},
+    {text: "好的，我明白了！我们应当携起手来，共同保护我们的地球村！", avatar: "../image/1.jpg"},
+];
+var currentIndex = 0;
+var container = document.getElementById("container");
+
+function nextDialog() {
+    var dialog = document.createElement("div");
+    dialog.className = "dialog";
+    var dialogueData = dialogues[currentIndex];
+    dialog.classList.add(currentIndex % 2 === 1 ? "left-dialog" : "right-dialog"); // 根据奇偶性设置左右对话框样式
+    
+    var avatar = document.createElement("img");
+    avatar.src = dialogueData.avatar;
+    avatar.alt = "Avatar";
+    avatar.className = "avatar";
+    dialog.appendChild(avatar);
+    
+    var content = document.createElement("div");
+    content.className = "dialog-content";
+    if (dialogueData.text) { // 如果是文本对话，则创建段落元素
+        var paragraph = document.createElement("p");
+        paragraph.innerText = dialogueData.text;
+        content.appendChild(paragraph);
+    } else if (dialogueData.image) { // 如果是图片对话，则创建图片元素
+        var image = document.createElement("img");
+        image.src = dialogueData.image;
+        image.alt = "Image";
+        content.appendChild(image);
+    }
+    dialog.appendChild(content);
+    
+    container.appendChild(dialog);
+    
+    setTimeout(function() {
+        dialog.classList.add("visible");
+    }, 100);
+    
+    currentIndex = (currentIndex < dialogues.length - 1) ? currentIndex + 1 : 0;
+}
+</script>
+</body>
+</html>

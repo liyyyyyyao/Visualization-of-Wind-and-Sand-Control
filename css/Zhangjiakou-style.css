@@ -1,0 +1,233 @@
+* {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                  }
+                  li {
+                    list-style: none;
+                  }
+                  @font-face {
+                    font-family: electronicFont;
+                    src: url(../font/frozen-crystal-font/FrozenCrystalBold-G21m.otf);
+                  }
+                  .video-background {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    min-width: 100%;
+                    min-height: 100%;
+                    width: auto;
+                    height: auto;
+                    z-index: -1;
+                  }
+                  header {
+                    position: relative;
+                    height: 3.75rem;
+                  }
+                  header h1 {
+                    color: #fff;
+                    text-align: center;
+                    font-size: 1.5rem;/*150px*/
+                  }
+                  .container{
+                    width: 20rem;
+                    height: 3.3rem;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border: 2px solid transparent; 
+                    margin: 10px; 
+                    padding: 5px;
+                    background-image: url(../image/图标3.png); /* 替换为你的图片路径 */
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size:100% 100%;
+                  }
+                  .pre {
+                    width: 0;
+                    height: 0;
+                    border-top: 8px solid transparent;
+                    border-right: 16px solid #2074bd;
+                    border-bottom: 8px solid transparent;
+                    position: absolute;
+                    top: 27px;
+                    left: 760px;
+                    cursor: pointer;
+                  }
+                  .next{
+                    width: 0;
+                    height: 0;
+                    border-top: 8px solid transparent;
+                    border-left: 16px solid #2074bd;
+                    border-bottom: 8px solid transparent;
+                    position: absolute;
+                    top: 27px;
+                    left: 960px;
+                    cursor: pointer;
+                  }
+                  .my-button{
+                    background-image:url(../image/图标一.png) ; /* 设置按钮背景颜色 */
+                    color: white; /* 设置文本颜色 */
+                    padding: 12px 28px; /* 设置内边距 */
+                    text-align: center; /* 设置文本居中 */
+                    text-decoration: none; /* 移除文本下划线 */
+                    display: inline-block; /* 设置为内联块级元素 */
+                    font-size: 12px; /* 设置字体大小 */
+                    margin: 4px 2px; /* 设置外边距 */
+                    cursor: pointer; /* 设置鼠标光标为指针形状 */
+                    border: none; /* 移除边框 */
+                    border-radius: 5px; /* 设置边框圆角 */
+                    transition: all 0.3s; /* 设置过渡效果 */
+                  }
+                  .my-button.button1 {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                  }
+                  .my-button.button2 {
+                    position: absolute;
+                    top: 10px;
+                    left: 160px;
+                  }
+                  .my-button.button3 {
+                    position: absolute;
+                    top: 10px;
+                    left: 310px;
+                  }
+                  .my-button:hover {
+                    background-image: url(../image/图标二.png); /* 鼠标悬停时的背景颜色 */
+                  }
+                  .mainbox {
+                    display: flex;
+                    min-width: 1024px;
+                    max-width: 1920px ;
+                    margin: 0 auto;
+                    padding: 0.125rem 0.125rem 0;
+                  }
+                  .mainbox .column {
+                    flex: 3.8;
+                  }
+                  .mainbox .column:nth-child(2) {
+                    flex: 5;
+                    margin: 0.125rem 0.1875rem;
+                  }
+                  .mainbox .panel {
+                    position: relative;
+                    height: 25.7rem;
+                    border: 1px solid rgba(25, 186, 139, 0.17);
+                    background: rgba(255, 255, 255, 0.04);
+                    padding: 0 0.1875rem 0.5rem;
+                    margin-bottom: 0.375rem;
+                  }
+                  .mainbox .panel::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 10px;
+                    height: 10px;
+                    border-left: 2px solid #02a6b5;
+                    border-top: 2px solid #02a6b5;
+                  }
+                  .mainbox .panel::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 10px;
+                    height: 10px;
+                    border-right: 2px solid #02a6b5;
+                    border-top: 2px solid #02a6b5;
+                  }
+                  .mainbox .panel .panel-footer {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                  }
+                  .mainbox .panel .panel-footer::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 10px;
+                    height: 10px;
+                    border-left: 2px solid #02a6b5;
+                    border-bottom: 2px solid #02a6b5;
+                  }
+                  .mainbox .panel .panel-footer::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 10px;
+                    height: 10px;
+                    border-right: 2px solid #02a6b5;
+                    border-bottom: 2px solid #02a6b5;
+                  } 
+                  .mainbox .panel h2 {
+                    height: 3rem;
+                    line-height: 3rem;
+                    color: #fff;
+                    font-size: 1.25rem;
+                    text-align: center;
+                    font-weight: 400;
+                  }
+                  .mainbox .panel a {
+                    color: #fff;
+                    text-decoration: none;
+                    margin: 0 10px;
+                  }
+                  .mainbox .panel .chart {
+                    height: 22.5rem;
+                    background-color: rgba(210, 211, 216, 0.1);
+                  }
+                  .mainbox .panel .chart1 {
+                    height: 22.5rem;
+                    background-color: rgba(210, 211, 216, 0.1);
+                    color: #bfbebe;
+                    overflow-y: scroll;
+                  }
+                  .line{
+                    position: relative;
+                  }
+                  .bar{
+                    position: relative;
+                  }
+                  .radar{
+                    position: relative;
+                  }
+                  .map {
+                    position: relative;
+                  }
+                  table {
+                    width: 100%; /* 设置表格宽度 */
+                    border-collapse: collapse; /* 边框合并 */
+                    text-align: left; /* 单元格内文本对齐方式 */
+                  }
+                  tr:hover{
+                    background-color:#049aa8;/*鼠标悬停效果*/
+                  }
+                  th, td {
+                    border: 1px solid #ddd; /* 单元格边框样式 */
+                    padding: 8px; /* 单元格内边距 */
+                    color: #ddd;/*字体颜色*/
+                  }
+                  @keyframes rotate1 {
+                    from {
+                      transform: translate(-50%, -50%) rotate(0deg);
+                    }
+                    to {
+                      transform: translate(-50%, -50%) rotate(360deg);
+                    }
+                  }
+                  @keyframes rotate2 {
+                    from {
+                      transform: translate(-50%, -50%) rotate(0deg);
+                    }
+                    to {
+                      transform: translate(-50%, -50%) rotate(-360deg);
+                    }
+                  }
+                  
