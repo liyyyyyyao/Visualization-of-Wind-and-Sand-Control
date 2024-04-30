@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale-1.0" />
+        <link rel="stylesheet" href="css/Zhangjiakou-style.css"/>
+        <script src="echarts.min.js"></script>
+        <script src="echarts-wordcloud.min.js"></script>
+        <script src="jquery.js"></script>
+        <title>巴彦淖尔风沙治理</title>
+    </head>
+    <body>
+        <video class="video-background" autoplay muted loop>
+            <source src="image/background6.mp4" type="video/mp4" />
+          </video>
+
+        <header>
+            <button class="my-button button1" onclick="navigateToPage1()">
+                治理概述
+            </button>
+            <button class="my-button button2" onclick="navigateToPage2()">
+                治理成效
+            </button>
+            <button class="my-button button3" onclick="navigateToPage3()">
+                各省市详情
+            </button>
+            
+            <script>
+                // 定义函数，用于跳转到特定页面
+                function navigateToPage1() {
+                    // 指定目标页面的 URL
+                    window.location.href = 'intro.html'; 
+                }
+                
+                function navigateToPage2() {
+                    // 指定目标页面的 URL
+                    window.location.href = 'index.html'; 
+                }
+            
+                function navigateToPage3() {
+                    // 指定目标页面的 URL
+                    window.location.href = 'index.html'; 
+                }
+            </script>
+            <div class="pre"></div>
+            <div class="next"></div>
+            <div class="container">
+                <h1>巴彦淖尔</h1>
+            </div>
+        </header>
+
+        <section class="mainbox">
+            <div class="column">
+                <div class="panel line">
+                    <h2>九次普查森林覆盖率</h2>
+                    <div class="chart"></div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel bar">
+                    <h2>不同土地类型面积</h2>
+                    <div class="chart"></div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="panel map" style="height: 410px;width: 700px;">
+                <h2>巴彦淖尔政区图</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+                
+            
+            <div class="panel" style="height: 410px;width: 700px;">
+                <h2>治理情况</h2>
+                <div class="chart1">
+                    <p style="font-size: 1.5rem;">
+                                        巴彦淖尔市，别称河套、巴盟、巴市，内蒙古自治区辖地级市，“巴彦”为“富饶”之意，“淖尔”为“湖泊”之意，“巴彦淖尔”意为“富饶的湖泊”。位于内蒙古西部，在北纬40°13'～42°28'，东经105°12'～109°53'之间，东接包头，西连阿拉善盟、乌海市，南隔黄河与鄂尔多斯市相望，北与蒙古国接壤，总面积6.5万平方千米。截至2022年，巴彦淖尔市辖1个市辖区、2个县、4个旗。截至2022年底，巴彦淖尔市常住人口为151.76万人。
+                                        近年来，巴彦淖尔市牢固树立和践行“绿水青山就是金山银山”理念，大力实施乌兰布和沙漠综合治理，加快建设国家防沙治沙综合示范区，先后实施国家重点生态县、天然林保护、退耕还林、“三北”防护林等一系列重点生态建设工程，累计完成治沙面积1490.87万亩；合理利用沙区资源，采用产业治沙新模式，通过引入企业，重点发展现代农牧业、沙漠生态旅游等产业，让金色沙漠变为“绿色宝库”。
+                                        从巴彦淖尔市的防沙治沙经验不难看出，防沙治沙要将山、水、林、田、湖、草、沙各要素组成一个互为依托、互为基础、不可分割的生命共同体。上世纪，兵团防沙治沙工作以改善垦区内部的生态环境为主，主要建设“条田林网配套”的网格式农田防护林，并在两大沙漠周边团场和边境一线团场大力营造防风沙基干林，在沙漠边缘初步形成绵延上百公里的防风沙基干林带。近年来，兵团防沙治沙工作以建立生态安全体系为目标，向内外兼治的主动型大治沙格局转变。
+                                        整体推进防沙治沙工作，兵团需要从系统和全局角度谋划，以整体性、多目标综合管理模式开展生态系统管理，推进山水林田湖草沙一体化保护和系统治理，全面保护和增加森林植被，加大沙产业开发、湿地保护力度，实施沙地荒漠林、公益林保护工程，以沙漠边缘及绿洲、沙地、流域、山系等为防治单元，加强治沙、治水、治山全要素协调和管理。
+                                        
+</p>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+            <div class="column">
+                <div class="panel radar">
+                    <h2>词云图</h2>
+                    <div class="chart">
+                    <!-- <img src="../image/Beijing.png"> -->
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel map">
+                    <h2>治理现状</h2>
+                    <div class="chart">
+                        <table>
+                            <tr>
+                                <td>完成造林</td>
+                                <td>42.16万亩</td>
+                            </tr>
+                            <tr>
+                                <td>PM2.5平均浓度</td>
+                                <td>每立方米25微克</td>
+                            </tr>
+                            <tr>
+                                <td>优良天数</td>
+                                <td>达295天</td>
+                            </tr>
+                           
+                        </table>
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+                
+            </div>
+        </section>
+
+        <script src="bayannaoer.js"></script>
+        <script src="echarts.min.js"></script>
+    </body>
+</html>

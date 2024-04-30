@@ -26,6 +26,7 @@ header h1 {
   line-height: 3.15rem;
 }
 .mainbox {
+  height: 47rem;
   display: flex;
   min-width: 1024px;
   max-width: 1920px ;
