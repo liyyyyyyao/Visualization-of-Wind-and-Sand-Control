@@ -45,7 +45,7 @@
                     <div class="panel-footer"></div>
                 </div>
                 <div class="panel radar">
-                    <h2 id="radarChartTitle">治理成效--空气质量影响指标及时空变化</h2>
+                    <h2 id="radarChartTitle">治理成效--AQI影响指标及时空变化</h2>
                     <div class="chart"></div>
                     <div class="panel-footer"></div>
                 </div>
@@ -63,9 +63,9 @@
                         <li style="background-color: rgba(255, 205, 200, 0.6); color: #fff; border: none; padding: 10px 20px; border-radius: 5px;font-family: Arial, sans-serif;">
                             <button onclick="window.location.href='intro.html'">京津风沙源地</button>
                           </li>
-                      <li style="background-color:rgba(187, 255, 255, 0.5); color: #fff; border: none; padding: 10px 20px; border-radius: 10px;">
-                        <button onclick="window.location.href='video.html'">沙尘视频观看</button>
-                      </li>
+                          <li style="background-color:rgba(187, 255, 255, 0.5); color: #fff; border: none; padding: 10px 20px; border-radius: 10px;">
+                            <button onclick="window.location.href='advice.html'">建议一览</button>
+                          </li>
                     </ul>
                   </div>
                 </div>
@@ -94,6 +94,30 @@
                             break;
                         case '榆林市':
                             window.location.href = 'yulin.html';
+                            break;
+                        case '鄂尔多斯市':
+                            window.location.href = 'eerduosi.html';
+                            break;
+                        case '锡林郭勒盟':
+                            window.location.href = 'xilinguolemeng.html';
+                            break;
+                        case '承德市':
+                            window.location.href = 'chengde.html';
+                            break;
+                        case '包头市':
+                            window.location.href = 'baotou.html';
+                            break;
+                        case '呼和浩特市':
+                            window.location.href = 'huhehaote.html';
+                            break;
+                        case '乌兰察布市':
+                            window.location.href = 'wulanchabu.html';
+                            break;
+                        case '大同市':
+                            window.location.href = 'datong.html';
+                            break;
+                        case '朔州市':
+                            window.location.href = 'shuozhou.html';
                             break;
                         default:
                         // 默认情况下的处理
@@ -386,13 +410,7 @@
                 window.location.href = 'TSP.html'; // 修改为你想要跳转的页面
             });
         </script>
-        <script>
-            // 添加点击事件监听
-                document.getElementById('radarChartTitle').addEventListener('click', function() {
-                    // 页面跳转到新的页面
-                    window.location.href = 'https://www.aqistudy.cn/historydata/daydata.php?city=%E5%8C%97%E4%BA%AC&month=202404'; // 修改为你想要跳转的页面
-                });
-            </script>
+        
 
     </body>
 </html>

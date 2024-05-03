@@ -50,9 +50,9 @@
                     border-top: 8px solid transparent;
                     border-right: 16px solid #2074bd;
                     border-bottom: 8px solid transparent;
-                    position: absolute;
-                    top: 27px;
-                    left: 760px;
+                    position: relative;
+                    bottom: 50%;
+                    left: 18%;
                     cursor: pointer;
                   }
                   .next{
@@ -61,9 +61,9 @@
                     border-top: 8px solid transparent;
                     border-left: 16px solid #2074bd;
                     border-bottom: 8px solid transparent;
-                    position: absolute;
-                    top: 27px;
-                    left: 960px;
+                    position: relative;
+                    bottom: 94%;
+                    left: 77%;
                     cursor: pointer;
                   }
                   .my-button{

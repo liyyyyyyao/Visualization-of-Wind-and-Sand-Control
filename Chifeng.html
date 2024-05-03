@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale-1.0" />
-        <link rel="stylesheet" href="css/chifeng-style.css"/>
+        <link rel="stylesheet" href="css/Zhangjiakou-style.css"/>
         <script src="echarts.min.js"></script>
         <script src="echarts-wordcloud.min.js"></script>
         <script src="jquery.js"></script>
@@ -11,23 +11,42 @@
     </head>
     <body>
         <video class="video-background" autoplay muted loop>
-            <source src="image/grass2.mp4" type="video/mp4" />
+            <source src="image/WeChat_20240408232809.mp4" type="video/mp4" />
           </video>
 
         <header>
-            <button class="my-button button1">
+            <button class="my-button button1" onclick="navigateToPage1()">
                 治理概述
             </button>
-            <button class="my-button button2">
+            <button class="my-button button2" onclick="navigateToPage2()">
                 治理成效
             </button>
-            <button class="my-button button3">
+            <button class="my-button button3" onclick="navigateToPage3()">
                 各省市详情
             </button>
-            <div class="pre"></div>
-            <div class="next"></div>
+            
+            <script>
+                // 定义函数，用于跳转到特定页面
+                function navigateToPage1() {
+                    // 指定目标页面的 URL
+                    window.location.href = 'intro.html'; 
+                }
+                
+                function navigateToPage2() {
+                    // 指定目标页面的 URL
+                    window.location.href = 'index.html'; 
+                }
+            
+                function navigateToPage3() {
+                    // 指定目标页面的 URL
+                    window.location.href = 'index.html'; 
+                }
+            </script>
+            
             <div class="container">
                 <h1>赤峰</h1>
+                <div class="pre" onclick="window.location.href='chengdehtml'"></div>
+                <div class="next" onclick="window.location.href='datong.html'"></div>    
             </div>
         </header>
 
@@ -56,9 +75,11 @@
             <div class="panel" style="height: 410px;width: 700px;">
                 <h2>治理情况</h2>
                 <div class="chart1">
+                    <p style="font-size: 1.5rem;">
                     赤峰市位于内蒙古东南部，蒙冀辽三省区交汇处，东南与朝阳接壤，西南与承德毗邻，东部与通辽相连，西北与锡林郭勒盟交界。赤峰地貌呈三面环山、西高东低、多山多丘陵的特征。赤峰属温带半干旱大陆性季风气候区，四季分明，冬季漫长寒冷，夏季短促，雨量集中。赤峰市是内蒙古自治区唯一一个浑善达克沙地和科尔沁沙地均大面积分布的地区，总面积2661.9万亩、占全区的52.2%，是全区荒漠化治理的主战场。
 赤峰市坚持生态立市，全市累计投入资金55亿多元，使全市沙化土地面积由1994年第一次全国监测的3995.67万亩减少到2661.9万亩，林草植被盖度达到65%以上，实现了由“沙进人退”到“绿进沙退”的历史性转变。赤峰市区位重要，对于防止科尔沁、浑善达克两大沙地“握手”具有关键作用，是打好科尔沁、浑善达克两大沙地歼灭战的主战场。赤峰市将全市两大沙地治理分为四个片区，每个片区针对不同情况采取不同的治理措施，创新机制，推行先建后补、以工代赈等模式，让广大农牧民积极参与到防沙治沙工作中。
-                </div>
+                </p>
+</div>
                 <div class="panel-footer"></div>
             </div>
         </div>

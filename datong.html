@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale-1.0" />
+        <link rel="stylesheet" href="css/Zhangjiakou-style.css"/>
+        <script src="echarts.min.js"></script>
+        <script src="echarts-wordcloud.min.js"></script>
+        <script src="jquery.js"></script>
+        <title>大同风沙治理</title>
+    </head>
+    <body>
+        <video class="video-background" autoplay muted loop>
+            <source src="image/WeChat_20240408232809.mp4" type="video/mp4" />
+          </video>
+
+        <header>
+            <button class="my-button button1" onclick="navigateToPage1()">
+                治理概述
+            </button>
+            <button class="my-button button2" onclick="navigateToPage2()">
+                治理成效
+            </button>
+            <button class="my-button button3" onclick="navigateToPage3()">
+                各省市详情
+            </button>
+            
+            <script>
+                // 定义函数，用于跳转到特定页面
+                function navigateToPage1() {
+                    // 指定目标页面的 URL
+                    window.location.href = 'intro.html'; 
+                }
+                
+                function navigateToPage2() {
+                    // 指定目标页面的 URL
+                    window.location.href = 'index.html'; 
+                }
+            
+                function navigateToPage3() {
+                    // 指定目标页面的 URL
+                    window.location.href = 'index.html'; 
+                }
+            </script>
+            
+            <div class="container">
+                <h1>大同</h1>
+                <div class="pre" onclick="window.location.href='Chifeng.html'"></div>
+                <div class="next" onclick="window.location.href='eerduosi.html'"></div>    
+            </div>
+        </header>
+
+        <section class="mainbox">
+            <div class="column">
+                <div class="panel line">
+                    <h2>九次普查森林覆盖率</h2>
+                    <div class="chart"></div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel bar">
+                    <h2>不同土地类型面积</h2>
+                    <div class="chart"></div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="panel map" style="height: 410px;width: 700px;">
+                <h2>大同市政区图</h2>
+                <div class="chart"></div>
+                <div class="panel-footer"></div>
+            </div>
+                
+            
+            <div class="panel" style="height: 410px;width: 700px;">
+                <h2>治理情况</h2>
+                <div class="chart1">
+                    <p style="font-size: 1.5rem;">
+                                        大同市是中部地区重点城市、省域副中心城市，地理坐标位于北纬39°54′~40°44′，东经112°06′~114°33′。大同市地处华北地区、晋北大同盆地中心、晋冀蒙三省区交界、黄土高原东北，是全晋之屏障、北方之门户，且扼晋、冀、蒙之咽喉要道，北隔长城与内蒙古乌兰察布接壤。
+曾经的大同市，几乎看不到蓝天，过度的开采只留下了满目疮痍的矿山。为了能打赢蓝天保卫战，大同市以超常的举措将铁腕治污进行到底，不仅积极引导了传统行业的转方式、调结构，还全面打响了“治企、减煤、控车、降尘等应对重污染天气”的战役，从“煤都黑”到“大同蓝”，这座资源型城市为摆脱生态困局付出了艰辛的努力，也取得了扎实的成效。
+ 近年来，大同市直面生态环境基础弱、风沙大、发展结构单一的状况，在生态治理上下大功夫，加快优化产业结构，使大同市生态环境得到了极大的改善，人民生活更加幸福宜居。2017年，大同市获得“全国美丽山水城市”称号；2018年，实现从“煤都黑”到“大同蓝”的转变，被国务院通报表扬；2019年，获得“全国十佳生态文明城市”和“中国美丽城市”称号……如今的大同正处处呈现出一幅生机盎然的绿色画卷。
+ 为了打赢蓝天保卫战，大同市设立市县乡三级生态环境保护委员会，实施环保一票否决制，健全市县乡村四级环境监管网格和协同治污、联合执法、应急联动三大机制，完善环保与公安联席会议、联合督办、联合调查、定期会商、信息共享等联动工作机制……这些制度为实现“大同蓝”奠定了坚实基础。
+ 积极引导、推动传统行业转方式、调结构，硬化、强化“领导包治、部门联治、群防群治”治污责任，严化、实化“责任网格化、项目清单化、问题台账化”治污机制，落实“五严治气”措施，严防“散乱污”企业反弹，严限机动车，严管施工工地，严抓工业企业错峰生产和错峰运输，严控市区散煤污染，严把源头、过程、后果“三道关”。数据是最好的标尺，2013~2018年，大同市空气质量连续6年排名山西省第一。去年，大同市延续良好势头，PM2.5年均浓度值和优良天数再次位列山西省第一。大同市也成为了山西省唯一达到国家环境空气质量二级标准的城市。
+“十三五”期间，大同市依托京津风沙源治理、退耕还林、太行山绿化、环京津生态屏障建设等重点林业生态建设工程，完成营造林任务共计173．4783万亩。其中完成人工造林面积134．9083万亩、封山育林16．1万亩、退化林修复6．5万亩，为推动大同市山水林田湖草系统治理发挥了重要作用，也为京津冀地区的生态安全筑起了一道道屏障。
+未来5年，大同市还将大力推进荒山造林绿化、森林质量精准提升、绿色廊道、林业产业富民、生态保护、绿色家园等工程，按照优化布局、突出重点、强化功能的原则，构筑“一河两屏、六区多廊”的生态安全格局，从而实现国土治理生态化、绿色廊道景观化、公园建设功能化、生态旅游特色化。
+</p>
+</div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+            <div class="column">
+                <div class="panel radar">
+                    <h2>词云图</h2>
+                    <div class="chart">
+                    <!-- <img src="../image/Beijing.png"> -->
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+                <div class="panel map">
+                    <h2>治理现状</h2>
+                    <div class="chart">
+                        <table>
+                            <tr>
+                                <td>造林总面积</td>
+                                <td>28.03万亩</td>
+                            </tr>
+                            <tr>
+                                <td>优良天数</td>
+                                <td>299天</td>
+                            </tr>
+                            <tr>
+                                <td>PM2.5平均浓度</td>
+                                <td>每立方米28微克</td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+                
+            </div>
+        </section>
+
+        <script src="datong.js"></script>
+        <script src="echarts.min.js"></script>
+    </body>
+</html>
