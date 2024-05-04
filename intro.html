@@ -9,23 +9,42 @@
         <script src="jquery.js"></script>
         <style>
             .video-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1; /* 确保视频在所有其他内容的后面 */
-            object-fit: cover; /* 视频尺寸自适应屏幕大小 */
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1; /* 确保视频在所有其他内容的后面 */
+                object-fit: cover; /* 视频尺寸自适应屏幕大小 */
             }
             #mainMap {
-            height: 100%; /* 将高度设置为父元素高度的50% */
-            width: 75%; /* 将宽度设置为父元素宽度的50% */
-            max-width: 100%; /* 最大宽度不超过父元素宽度 */
-            min-width: 300px; /* 最小宽度 */
-            max-height: 100%; /* 最大高度不超过父元素高度 */
-            min-height: 300px; /* 最小高度 */
-        }
+                height: 100%; /* 将高度设置为父元素高度的50% */
+                width: 75%; /* 将宽度设置为父元素宽度的50% */
+                max-width: 100%; /* 最大宽度不超过父元素宽度 */
+                min-width: 300px; /* 最小宽度 */
+                max-height: 100%; /* 最大高度不超过父元素高度 */
+                min-height: 300px; /* 最小高度 */
+            }
+            #myButton {
+                position: fixed; /* 保持固定定位 */
+                top: 1%; /* 使用百分比来调整顶部距离 */
+                left: 1%; /* 保持靠近右边 */
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                z-index: 999; /* 确保按钮在其他内容之上 */
+            }
         </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("myButton").addEventListener("click", function() {
+            window.location.href = "index.html";
+            });
+            });
+            </script>
     </head>
     <body>
         <video autoplay loop muted class="video-background">
@@ -36,6 +55,7 @@
             <h1>京津风沙源治理可视化</h1>
             
         </header>
+        <button id="myButton">返回首页</button>
 
         <section class="mainbox">
             <div class="column">
