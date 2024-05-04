@@ -113,12 +113,12 @@
                             },
                             {
                               value: 9.94,
-                              symbol: pathSymbols.rocket,
+                              symbol: pathSymbols.plane,
                               symbolSize: [30, 30]
                             },
                             {
                               value: 182.93,
-                              symbol: pathSymbols.plane,
+                              symbol: pathSymbols.rocket,
                               symbolSize: [30, 30]
                             },
                             {
@@ -279,8 +279,8 @@
                     var myChart=echarts.init(document.querySelector('.radar .chart'));
                     const list = [
                       {
-                        value: '50',
-                        name: '生态',
+                        value: '37',
+                        name: '治沙',
                         textStyle: {
                           shadowBlur: 4,
                           shadowColor: '#ECEFFF',
@@ -288,25 +288,25 @@
                           color: '#73DDFF',
                         },
                       }, // 50
-                      { value: '30', name: '工程' },
-                      { value: '29', name: '北京' },
-                      { value: '28', name: '造林' },
-                      { value: '27', name: '治理' },
-                      { value: '26', name: '京津' },
-                      { value: '25', name: '风沙源' },
-                      { value: '24', name: '防沙' },
-                      { value: '23', name: '治沙' },
-                      { value: '22', name: '危害' },
-                      { value: '21', name: '沙化' },
-                      { value: '20', name: '土地' },
-                      { value: '16', name: '风沙' },
-                      { value: '15', name: '实现' },
-                      { value: '14', name: '提升' },
-                      { value: '13', name: '产业' },
-                      { value: '12', name: '系统' },
-                      { value: '11', name: '国家' },
-                      { value: '10', name: '生态环境' },
-                      { value: '9', name: '植物' },
+                      { value: '21', name: '项目' },
+                      { value: '19', name: '防沙' },
+                      { value: '16', name: '工程' },
+                      { value: '16', name: '群众' },
+                      { value: '15', name: '沙地' },
+                      { value: '14', name: '以工代赈' },
+                      { value: '14', name: '治理' },
+                      { value: '12', name: '实施' },
+                      { value: '11', name: '参与' },
+                      { value: '11', name: '万亩' },
+                      { value: '10', name: '完成' },
+                      { value: '9', name: '苏木' },
+                      { value: '9', name: '科尔沁沙地' },
+                      { value: '9', name: '嘎查' },
+                      { value: '9', name: '生态' },
+                      { value: '9', name: '赤峰' },
+                      { value: '8', name: '翁牛特旗' },
+                      { value: '8', name: '综合治理' },
+                      { value: '8', name: '农牧民' },
                     ]
                     option = {
                       tooltip: {

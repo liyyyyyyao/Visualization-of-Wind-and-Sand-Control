@@ -34,22 +34,22 @@
                       yAxis: [
                         {
                           type: 'value',
-                          name: '沙尘量',
+                          name: '沙尘量/万吨',
                           min: 0,
                           max: 200,
                           interval: 50,
                           axisLabel: {
-                            formatter: '{value} 万吨'
+                            formatter: '{value}'
                           }
                         },
                         {
                           type: 'value',
-                          name: '沙尘总量',
+                          name: '沙尘总量/万吨',
                           min: 0,
                           max: 300,
                           interval: 75,
                           axisLabel: {
-                            formatter: '{value} 万吨'
+                            formatter: '{value}'
                           }
                         }
                       ],
@@ -373,7 +373,7 @@ myChart.setOption(option);
                   },
                   {
                       
-                      name: '治理现状',
+                      name: '治理问题',
                       itemStyle: {
                           normal: {
                               color: '#FCBB5B',
@@ -384,7 +384,7 @@ myChart.setOption(option);
                   },
                   {
                       
-                      name: '治理问题',
+                      name: '治理成效',
                       itemStyle: {
                           normal: {
                               color: '#FCBB5B',
@@ -407,41 +407,36 @@ myChart.setOption(option);
                       name: 'AQI',
                   },
                   {
-                      name: 'PM10',
-                  },
-                  {
-                      name: '风沙总量',
-                  },
-                  {
-                      name: '风沙来源',
-                  },
-                  {
                       name: '危害评估',
                   },
                   {
-                      name: '土地利用',
+                      name: 'PM10',
+                  },
+                  {
+                      name: '土地类型',
+                  },
+                  {
+                      name: '森林覆盖',
+                  },
+                  {
+                      name: '空气质量',
                   },
               ],
               links: [
                   {
-                      source: 0,
-                      target: 1,
-                      value: '',
+                    source: 0,
+                    target: 1,
+                    value: '',
                   },
                   {
-                      source: 1,
-                      target: 2,
-                      value: '',
+                    source: 1,
+                    target: 2,
+                    value: '',
                   },
                   {
-                      source: 2,
-                      target: 3,
-                      value: '',
-                  },
-                  {
-                      source: 2,
-                      target: 3,
-                      value: '',
+                    source: 2,
+                    target: 3,
+                    value: '',
                   },
                   {
                     source: 0,
@@ -449,7 +444,7 @@ myChart.setOption(option);
                     value: '',
                   },
                   {
-                    source: 4,
+                    source: 0,
                     target: 5,
                     value: '',
                   },

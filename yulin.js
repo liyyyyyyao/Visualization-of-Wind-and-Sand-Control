@@ -89,7 +89,7 @@
                               opacity: 1
                             }
                           },
-                          data: [26.74, 2.64,97.65, 14.49, 134.88, 7.72, 0.09, 14.25],
+                          data: [153.99,	7.71,	92.59,	16.60,	121.71,	0.97,	5.50,	23.77],
                           z: 10
                         },
                         {
@@ -101,42 +101,42 @@
                           symbolOffset: [0, '-120%'],
                           data: [
                             {
-                              value: 26.74,
+                              value: 153.99,
                               symbol: pathSymbols.reindeer,
                               symbolSize: [30, 30]
                             },
                             {
-                              value: 2.64,
+                              value: 7.71,
                               symbol: pathSymbols.rocket,
                               symbolSize: [30, 30]
                             },
                             {
-                              value: 97.65,
+                              value: 92.59,
                               symbol: pathSymbols.plane,
                               symbolSize: [30, 30]
                             },
                             {
-                              value: 14.49,
+                              value: 16.6,
                               symbol: pathSymbols.train,
                               symbolSize: [30, 30]
                             },
                             {
-                              value: 134.88,
+                              value: 121.71,
                               symbol: pathSymbols.ship,
                               symbolSize: [30, 30]
                             },
                             {
-                              value: 7.72,
+                              value: 0.97,
                               symbol: pathSymbols.car,
                               symbolSize: [30, 30]
                             },
                             {
-                              value: 0.09,
+                              value: 5.5,
                               symbol: pathSymbols.run,
                               symbolSize: [30, 30]
                             },
                             {
-                              value: 14.25,
+                              value: 23.77,
                               symbol: pathSymbols.walk,
                               symbolSize: [30, 30]
                             }
@@ -273,8 +273,8 @@
                     var myChart=echarts.init(document.querySelector('.radar .chart'));
                     const list = [
                       {
-                        value: '50',
-                        name: '生态',
+                        value: '92',
+                        name: '榆林',
                         textStyle: {
                           shadowBlur: 4,
                           shadowColor: '#ECEFFF',
@@ -282,24 +282,24 @@
                           color: '#73DDFF',
                         },
                       }, // 50
-                      { value: '30', name: '工程' },
-                      { value: '28', name: '造林' },
-                      { value: '27', name: '治理' },
-                      { value: '26', name: '京津' },
-                      { value: '25', name: '风沙源' },
-                      { value: '24', name: '防沙' },
-                      { value: '23', name: '治沙' },
-                      { value: '22', name: '危害' },
-                      { value: '21', name: '沙化' },
-                      { value: '20', name: '土地' },
-                      { value: '16', name: '风沙' },
-                      { value: '15', name: '实现' },
-                      { value: '14', name: '提升' },
-                      { value: '13', name: '产业' },
-                      { value: '12', name: '系统' },
-                      { value: '11', name: '国家' },
-                      { value: '10', name: '生态环境' },
-                      { value: '9', name: '植物' },
+                      { value: '90', name: '治沙' },
+                      { value: '44', name: '生态' },
+                      { value: '42', name: '治理' },
+                      { value: '26', name: '樟子松' },
+                      { value: '25', name: '发展' },
+                      { value: '24', name: '造林' },
+                      { value: '22', name: '防沙' },
+                      { value: '21', name: '荒漠化' },
+                      { value: '18', name: '沙地' },
+                      { value: '17', name: '中国' },
+                      { value: '16', name: '万亩' },
+                      { value: '13', name: '生态环境' },
+                      { value: '13', name: '森林' },
+                      { value: '13', name: '示范区' },
+                      { value: '12', name: '林业' },
+                      { value: '12', name: '绿色' },
+                      { value: '12', name: '建设' },
+                      { value: '12', name: '保护' },
                     ]
                     option = {
                       tooltip: {

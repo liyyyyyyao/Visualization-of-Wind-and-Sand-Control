@@ -95,7 +95,7 @@
                               opacity: 1
                             }
                           },
-                          data: [266.324,9.94,182.89,21.81,329.95,7.11,9.53,1.41],
+                          data: [41.11,0.07,43.03,0.83,45.63,9.36,0.52,3.25],
                           z: 10
                         },
                         {
@@ -107,42 +107,42 @@
                           symbolOffset: [0, '-120%'],
                           data: [
                             {
-                              value: 266.324,
+                              value: 41.11,
                               symbol: pathSymbols.reindeer,
                               symbolSize: [30, 30]
                             },
                             {
-                              value: 9.94,
-                              symbol: pathSymbols.rocket,
-                              symbolSize: [30, 30]
-                            },
-                            {
-                              value: 182.93,
+                              value: 0.07,
                               symbol: pathSymbols.plane,
                               symbolSize: [30, 30]
                             },
                             {
-                              value: 21.81,
+                              value: 43.03,
+                              symbol: pathSymbols.rocket,
+                              symbolSize: [30, 30]
+                            },
+                            {
+                              value: 0.83,
                               symbol: pathSymbols.train,
                               symbolSize: [30, 30]
                             },
                             {
-                              value: 329.95,
+                              value: 45.63,
                               symbol: pathSymbols.ship,
                               symbolSize: [30, 30]
                             },
                             {
-                              value: 7.11,
+                              value: 9.36,
                               symbol: pathSymbols.car,
                               symbolSize: [30, 30]
                             },
                             {
-                              value: 9.53,
+                              value: 0.52,
                               symbol: pathSymbols.run,
                               symbolSize: [30, 30]
                             },
                             {
-                              value: 1.41,
+                              value: 3.25,
                               symbol: pathSymbols.walk,
                               symbolSize: [30, 30]
                             }
@@ -279,8 +279,8 @@
                     var myChart=echarts.init(document.querySelector('.radar .chart'));
                     const list = [
                       {
-                        value: '50',
-                        name: '生态',
+                        value: '5',
+                        name: '全市',
                         textStyle: {
                           shadowBlur: 4,
                           shadowColor: '#ECEFFF',
@@ -288,24 +288,24 @@
                           color: '#73DDFF',
                         },
                       }, // 50
-                      { value: '30', name: '工程' },
-                      { value: '28', name: '造林' },
-                      { value: '27', name: '治理' },
-                      { value: '26', name: '京津' },
-                      { value: '25', name: '风沙源' },
-                      { value: '24', name: '防沙' },
-                      { value: '23', name: '治沙' },
-                      { value: '22', name: '危害' },
-                      { value: '21', name: '沙化' },
-                      { value: '20', name: '土地' },
-                      { value: '16', name: '风沙' },
-                      { value: '15', name: '实现' },
-                      { value: '14', name: '提升' },
-                      { value: '13', name: '产业' },
-                      { value: '12', name: '系统' },
-                      { value: '11', name: '国家' },
-                      { value: '10', name: '生态环境' },
-                      { value: '9', name: '植物' },
+                      { value: '5', name: '土地' },
+                      { value: '5', name: '防沙' },
+                      { value: '5', name: '治沙' },
+                      { value: '3', name: '总面积' },
+                      { value: '2', name: '内蒙古自治区' },
+                      { value: '2', name: '工业' },
+                      { value: '2', name: '城市' },
+                      { value: '2', name: '重要' },
+                      { value: '2', name: '中心' },
+                      { value: '2', name: '中国' },
+                      { value: '2', name: '草原' },
+                      { value: '2', name: '世界' },
+                      { value: '2', name: '沙化' },
+                      { value: '2', name: '面积' },
+                      { value: '2', name: '万亩' },
+                      { value: '2', name: '荒漠化' },
+                      { value: '2', name: '生态' },
+                      { value: '2', name: '完成' },
                     ]
                     option = {
                       tooltip: {
