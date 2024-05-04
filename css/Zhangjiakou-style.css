@@ -184,6 +184,9 @@
                     color: #bfbebe;
                     overflow-y: scroll;
                   }
+                  .chart1::-webkit-scrollbar{
+                    display: none;
+                  }
                   .line{
                     position: relative;
                   }
