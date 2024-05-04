@@ -20,7 +20,7 @@
                         }
                       },
                       legend: {
-                        data: ['耕地', '沙地', '草地','Temperature']
+                        data: ['耕地', '沙地', '草地']
                       },
                       xAxis: [
                         {
